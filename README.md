@@ -39,7 +39,9 @@ Softmax Output Layer (10 classes)
 **⚙️ How to Run**
 
 Clone the repo:
+
 git clone https://github.com/rohanwetal/Sign-Language-Digit-Recognition.git
+
 cd Sign-Language-Digit-Recognition
 
 Install dependencies:
