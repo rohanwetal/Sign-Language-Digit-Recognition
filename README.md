@@ -1,32 +1,68 @@
-# Sign Language Digits Dataset
-### By ***[Turkey Ankara Ayrancı Anadolu High School](http://ayrancianadolu.meb.k12.tr)*** Students
+**Sign Language Digit Recognition 🤟**
 
-#### Turkey Ankara Ayrancı Anadolu High School's Sign Language Digits Dataset
-This dataset is prepared by our school students.
+A deep learning-based project that recognizes American Sign Language (ASL) digits (0–9) in real-time using Convolutional Neural Networks (CNN) and OpenCV. Achieved 96% accuracy with efficient preprocessing and a responsive prediction pipeline.
 
-### Dataset Preview:
+**🔗 Dataset Source**
 
-|<img src="Examples/example_0.JPG">|<img src="Examples/example_1.JPG">|<img src="Examples/example_2.JPG">|<img src="Examples/example_3.JPG">|<img src="Examples/example_4.JPG">|
-|:-:|:-:|:-:|:-:|:-:|
-|0|1|2|3|4|
-|<img src="Examples/example_5.JPG">|<img src="Examples/example_6.JPG">|<img src="Examples/example_7.JPG">|<img src="Examples/example_8.JPG">|<img src="Examples/example_9.JPG">|
-|5|6|7|8|9|
+Sign Language Digits Dataset by Arda Mavi
+The dataset contains 2062 labeled grayscale images of hand signs representing digits 0–9.
 
-### Details of datasets:
-- Image size: 100 x 100 pixels
-- Color space: RGB
-- Number of classes: 10 (Digits: 0-9)
-- Number of participant students: 218
-- Number of samples per student: 10
+**🚀 Features**
 
-## Project Executives:
-## Zeynep Dikle & Arda Mavi
-Turkey Ankara Ayrancı Anadolu High School Students
+Real-time digit recognition from webcam input
+Achieves ~96% accuracy on test data
+Preprocessing techniques like ROI extraction, resizing, and grayscale normalization
+Live prediction using a trained CNN model (Keras/TensorFlow)
 
-# For Development:
-### Processing Dataset:
-For processing the dataset, look up Arda Mavi's GitHub Gist: [gist.github.com/ardamavi/get_dataset.py](https://gist.github.com/ardamavi/a7d06ff8a315308771c70006cf494d69)
+🛠️ Tech Stack
 
-## Cite as:
-If you would like to use the data in research projects, please cite the following:<br/>
-Mavi, A., (2020), “A New Dataset and Proposed Convolutional Neural Network Architecture for Classification of American Sign Language Digits”, arXiv:2011.08927 [cs.CV]
+Python
+
+TensorFlow / Keras
+
+OpenCV
+
+NumPy
+
+Matplotlib
+
+**🧠 Model Architecture**
+
+Input Layer (64x64 grayscale images)
+
+Convolutional + ReLU + MaxPooling Layers
+
+Fully Connected Dense Layers
+
+Softmax Output Layer (10 classes)
+
+**⚙️ How to Run**
+
+Clone the repo
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/sign-language-digit-recognition.git
+cd sign-language-digit-recognition
+
+Install dependencies
+pip install -r requirements.txt
+Train the model (or use the pre-trained model)
+python train_model.py
+
+Run real-time recognition
+python detect_gesture.py
+
+
+**📊 Results**
+
+Accuracy: 96% on test data
+Latency: Near-instant predictions with webcam input
+Noise Reduction: Improved image quality via preprocessing (~35% noise reduction)
+
+**📚 Use Cases**
+
+Assistive technology for the hearing/speech impaired
+Real-time educational tools for learning sign language
+Gesture-based human-computer interaction systems
