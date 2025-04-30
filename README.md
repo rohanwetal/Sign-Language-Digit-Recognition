@@ -38,21 +38,18 @@ Softmax Output Layer (10 classes)
 
 **⚙️ How to Run**
 
-Clone the repo
+Clone the repo:
+git clone https://github.com/rohanwetal/Sign-Language-Digit-Recognition.git
+cd Sign-Language-Digit-Recognition
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/sign-language-digit-recognition.git
-cd sign-language-digit-recognition
+Install dependencies:
 
-Install dependencies
 pip install -r requirements.txt
-Train the model (or use the pre-trained model)
-python train_model.py
 
-Run real-time recognition
+Run real-time recognition:
+
 python detect_gesture.py
+
 
 
 **📊 Results**
